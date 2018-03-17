@@ -3,6 +3,7 @@ let restaurants,
   cuisines
 var map
 var markers = []
+let listTabIndexStartPoint = 3;
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
@@ -160,6 +161,8 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
+
+  li.tabIndex = listTabIndexStartPoint++;
   li.append(more)
 
   return li
