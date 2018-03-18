@@ -14,12 +14,12 @@
   <!-- Beginning header -->
   <header role="banner">
     <!-- Beginning nav -->
-    <nav role="navigation">
-      <h1><a href="/" role="link" tabindex="0">Restaurant Reviews</a></h1>
+    <nav>
+      <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
     <ul id="breadcrumb" role="navigation" aria-label="Restaurant breadcrumb">
-      <li><a href="/" role="link" tabindex="1">Home</a></li>
+      <li><a href="/" role="link" tabindex="0" aria-label="go back to home page">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
     <!-- End nav -->
@@ -35,10 +35,10 @@
     <!-- End map -->
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
+      <h1 id="restaurant-name" aria-label="restaurant name"></h1>
       <img id="restaurant-img">
-      <p id="restaurant-cuisine" aria-label="Cuisine"></p>
-      <p id="restaurant-address" aria-label="Address"></p>
+      <p id="restaurant-cuisine" aria-label="cuisine type"></p>
+      <p id="restaurant-address" aria-label="address"></p>
       <table id="restaurant-hours" aria-label="Restaurant Hours"></table>
     </section>
     <!-- end restaurant -->
@@ -51,7 +51,7 @@
   <!-- End main -->
 
   <!-- Beginning footer -->
-  <footer id="footer" role="footer">
+  <footer id="footer" role="contentinfo">
     Copyright (c) 2017 <a href="/" role="link"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
   <!-- End footer -->

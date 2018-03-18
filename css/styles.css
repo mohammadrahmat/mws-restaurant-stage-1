@@ -149,14 +149,12 @@ nav h1 a {
 }
 #restaurants-list li {
   display: grid;
-  grid-template-columns: 1em 1fr 1em;
   background-color: #fff;
   border: 2px solid #ccc;
   border-radius: 20px;
   font-family: Arial,sans-serif;
   margin: 15px;
   min-height: 380px;
-  padding: 0 30px 25px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
@@ -170,30 +168,22 @@ nav h1 a {
   width: 100%;
   min-height: 248px;
 }
-#restaurants-list li h1 {
-  color: #f18200;
-  font-family: Arial,sans-serif;
-  font-size: 14pt;
-  font-weight: 200;
-  letter-spacing: 0;
-  line-height: 1.5ex;
-  margin: 20px 0 10px;
-  text-transform: uppercase;
-  height: 4ex;
+#restaurants-list li h2 {
+  color: #ddd;
+  background-color: #333;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 #restaurants-list p {
   margin: 0;
   font-size: 11pt;
-  height: 7.5ex;
+  height: 5ex;
   line-height: 2.5ex;
 }
 #restaurants-list li a {
   background-color: orange;
-  border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
   font-size: 10pt;
-  margin: 15px 0 0;
   padding: 8px 30px 10px;
   text-align: center;
   text-decoration: none;
@@ -287,9 +277,6 @@ nav h1 a {
   #restaurants-list {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: minmax(380px, auto);
-  }
-  #restaurants-list li {
-    display: block;
   }
 }
 
