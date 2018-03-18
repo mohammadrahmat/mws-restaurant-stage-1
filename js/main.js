@@ -9,6 +9,10 @@ let listTabIndexStartPoint = 3;
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
 document.addEventListener('DOMContentLoaded', (event) => {
+  if(navigator.serviceWorker) {
+    navigator.serviceWorker.register('sw.js');
+    console.log('sw registered');
+  }
   fetchNeighborhoods();
   fetchCuisines();
 });
