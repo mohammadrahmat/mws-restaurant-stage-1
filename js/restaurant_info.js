@@ -2,6 +2,11 @@ let restaurant;
 var map;
 let reviewListTabIndexStart = 5;
 
+if(navigator.serviceWorker) {
+  navigator.serviceWorker.register('sw.js');
+  console.log('sw registered');
+}
+
 /**
  * Initialize Google map, called from HTML.
  */
