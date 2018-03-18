@@ -1,4 +1,4 @@
-const staticCacheName = 'mw-v1', 
+const staticCacheName = 'mw-v2', 
 pageSkeleton = 'index.html',
 expectedCaches = [staticCacheName];
 const thingsToCache = [
